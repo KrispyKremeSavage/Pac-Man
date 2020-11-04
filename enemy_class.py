@@ -83,7 +83,7 @@ class Enemy:
 
     def find_next_cell_in_path(self, target):
         path = self.BFS([int(self.grid_pos.x), int(self.grid_pos.y)], [
-                        int(target[0]), int(target[1])])
+            int(target[0]), int(target[1])])
         return path[1]
 
     def BFS(self, start, target):
